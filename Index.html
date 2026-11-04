@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Human Body Explorer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Digital Human Body Explorer</h1>
+        <p>Jelajahi Sistem Saraf dan Sistem Gerak Manusia dengan Interaktif</p>
+    </header>
+
+    <nav>
+        <a href="#saraf">Sistem Saraf</a>
+        <a href="#gerak">Sistem Gerak</a>
+        <a href="#hubungan">Hubungan & Refleks</a>
+        <a href="#kuis">Kuis Interaktif</a>
+    </nav>
+
+    <main>
+        <section id="saraf">
+            <h2>1. Sistem Saraf Manusia</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <h3>Otak</h3>
+                    <p>Pusat pengolahan informasi dan koordinasi utama seluruh tubuh manusia[cite: 1].</p>
+                </div>
+                <div class="card">
+                    <h3>Sumsum Tulang Belakang</h3>
+                    <p>Jalur penghantar impuls saraf dari/ke otak serta pusat pengendali gerak refleks tertentu[cite: 1, 2].</p>
+                </div>
+                <div class="card">
+                    <h3>Saraf Tepi</h3>
+                    <p>Jaringan saraf yang menghubungkan sistem saraf pusat dengan seluruh bagian tubuh[cite: 1].</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="gerak">
+            <h2>2. Sistem Gerak Manusia</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <h3>Tulang</h3>
+                    <p>Berfungsi sebagai alat gerak pasif, menopang tubuh, dan melindungi organ-organ penting[cite: 1].</p>
+                </div>
+                <div class="card">
+                    <h3>Sendi</h3>
+                    <p>Penghubung antar tulang yang memungkinkan terjadinya berbagai jenis gerakan[cite: 1].</p>
+                </div>
+                <div class="card">
+                    <h3>Otot</h3>
+                    <p>Alat gerak aktif yang dapat berkontraksi dan berelaksasi untuk menghasilkan gerakan tubuh[cite: 1].</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="hubungan">
+            <h2>3. Hubungan Saraf dan Gerak (Sadar vs Refleks)</h2>
+            <p>Rangsangan diterima oleh reseptor $\rightarrow$ diteruskan ke saraf pusat $\rightarrow$ diolah $\rightarrow$ menghasilkan respons pada efektor (otot)[cite: 2].</p>
+            <ul>
+                <li><strong>Gerak Sadar:</strong> Diatur dan diproses oleh otak secara sadar (Contoh: Menulis, mengambil buku).</li>
+                <li><strong>Gerak Refleks:</strong> Berlangsung sangat cepat tanpa lewat pengolahan otak, melainkan diproses di sumsum tulang belakang (Contoh: Menarik tangan saat menyentuh benda panas)[cite: 2, 3].</li>
+            </ul>
+        </section>
+
+        <section id="kuis">
+            <h2>4. Kuis Interaktif</h2>
+            <div id="quiz-container">
+                <p id="question">Pertanyaan akan muncul di sini...</p>
+                <div id="options"></div>
+                <p id="result-feedback" style="font-weight: bold; margin-top: 15px;"></p>
+                <button id="next-btn" onclick="nextQuestion()" style="display:none; margin-top: 10px; padding: 8px 15px;">Pertanyaan Selanjutnya</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Proyek PPLG - SMK Raden Umar Said Kudus[cite: 1]</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
